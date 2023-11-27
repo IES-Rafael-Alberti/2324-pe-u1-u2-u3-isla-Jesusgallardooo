@@ -354,7 +354,7 @@ def jugar():
     resultado_movimiento = None
     
     # Loop principal del juego. El juego termina cuando el jugador realizar movimiento SALIR.
-    while movimiento != SALIR or resultado_movimiento == TESORO_ENCONTRADO:
+    while movimiento != SALIR or resultado_movimiento != TESORO_ENCONTRADO:
 
         # Obtener la nueva posición del jugador y procesar el movimiento
         nueva_posicion = obtener_nueva_posicion(posicion_jugador, movimiento)
